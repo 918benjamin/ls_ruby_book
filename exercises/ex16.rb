@@ -9,7 +9,7 @@ contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
 #    "Sally Johnson"=>{:email=>"sally@email.com", :address=>"404 Not Found Dr.",  :phone=>"123-234-3454"}
 #  }
 
-contact_data.each do |person|
+contact_data.each do |person| # Could do this simpler with the each_with_index method
   person.each_index do |d|
     if d == 0
       person[d] = [:email, person[d]]
